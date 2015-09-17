@@ -1,0 +1,46 @@
+{
+    "appKeys": {
+        "KEY_BG": 0
+    },
+    "capabilities": [
+        "configurable"
+    ],
+    "companyName": "Thomas Neptune",
+    "longName": "ConfigFace",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "fonts/Muli.ttf",
+                "name": "FONT_MULI_24",
+                "type": "font"
+            },
+            {
+                "file": "images/bird.png",
+                "name": "IMAGE_BG_BIRD",
+                "type": "png"
+            },
+            {
+                "file": "images/cat.png",
+                "name": "IMAGE_BG_CAT",
+                "type": "png"
+            },
+            {
+                "file": "images/dog.png",
+                "name": "IMAGE_BG_DOG",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "ConfigurableWatchface",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "275d5985-f316-4047-bba1-c88ec00d04e3",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}

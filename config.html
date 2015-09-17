@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Watchface Configuration</title>
+  </head>
+  <body>
+    <h1>Watchface Configuration</h1>
+    <p>Settings</p>
+ 
+    <p>Background:
+    <select id="face_select">
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+	  <option value="bird">Bird</option>
+    </select>
+    </p>
+ 
+    <p>
+    <button id="save_button">Save</button>
+    </p>
+  </body>
+<script>
+  //Setup to allow easy adding more options later
+  function saveOptions() {
+    var faceSelect = document.getElementById("face_select");
+ 
+    var options = {
+      "face": faceSelect.options[faceSelect.selectedIndex].value
+    }
+     
+    return options;
+  };
+ 
+  var submitButton = document.getElementById("save_button");
+  submitButton.addEventListener("click", 
+    function() {
+      console.log("Submit");
+ 
+      var options = saveOptions();
+      var location = "pebblejs://close#" + encodeURIComponent(JSON.stringify(options));
+       
+      document.location = location;
+    }, 
+  false);
+</script>
+</html>
